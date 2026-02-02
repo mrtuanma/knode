@@ -139,7 +139,7 @@ export default function Home() {
 
       <main className="mx-auto w-full max-w-6xl px-6">
         <motion.section
-          {...revealProps}
+          initial={false}
           className="relative grid items-center gap-12 py-36 md:grid-cols-[1.1fr_0.9fr]"
         >
           <div className="pointer-events-none absolute inset-0 -z-10 rounded-[48px] bg-[radial-gradient(circle_at_15%_20%,rgba(241,90,41,0.12),transparent_45%),radial-gradient(circle_at_70%_20%,rgba(45,212,191,0.12),transparent_40%)]" />
