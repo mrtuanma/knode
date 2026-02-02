@@ -143,7 +143,7 @@ export default function Home() {
           className="relative grid items-center gap-12 py-36 md:grid-cols-[1.1fr_0.9fr]"
         >
           <div className="pointer-events-none absolute inset-0 -z-10 rounded-[48px] bg-[radial-gradient(circle_at_15%_20%,rgba(241,90,41,0.12),transparent_45%),radial-gradient(circle_at_70%_20%,rgba(45,212,191,0.12),transparent_40%)]" />
-          <div className="space-y-8">
+          <div className="space-y-10 py-2">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-muted/30 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-[#F15A29]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#F15A29]" />
@@ -177,16 +177,25 @@ export default function Home() {
               </motion.button>
             </div>
             <div className="grid gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl border border-border/60 bg-card/50 p-3 text-xs text-muted-foreground">
-                <div className="text-sm font-semibold text-foreground">72 hrs</div>
+              <div className="rounded-2xl border border-border/60 bg-card/80 p-4 text-xs text-muted-foreground shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+                <div className="bg-gradient-to-r from-amber-200 via-orange-400 to-[#F15A29] bg-clip-text text-2xl font-semibold text-transparent">
+                  72 hrs
+                </div>
+                <div className="my-2 h-px w-8 bg-border/60" />
                 Battery-first uptime
               </div>
-              <div className="rounded-2xl border border-border/60 bg-card/50 p-3 text-xs text-muted-foreground">
-                <div className="text-sm font-semibold text-foreground">0 cloud</div>
+              <div className="rounded-2xl border border-border/60 bg-card/80 p-4 text-xs text-muted-foreground shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+                <div className="bg-gradient-to-r from-sky-200 via-teal-300 to-teal-500 bg-clip-text text-2xl font-semibold text-transparent">
+                  0 cloud
+                </div>
+                <div className="my-2 h-px w-8 bg-border/60" />
                 On-site intelligence
               </div>
-              <div className="rounded-2xl border border-border/60 bg-card/50 p-3 text-xs text-muted-foreground">
-                <div className="text-sm font-semibold text-foreground">1 tap</div>
+              <div className="rounded-2xl border border-border/60 bg-card/80 p-4 text-xs text-muted-foreground shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+                <div className="bg-gradient-to-r from-emerald-200 via-cyan-300 to-sky-500 bg-clip-text text-2xl font-semibold text-transparent">
+                  1 tap
+                </div>
+                <div className="my-2 h-px w-8 bg-border/60" />
                 Staff status check-in
               </div>
             </div>
@@ -197,18 +206,18 @@ export default function Home() {
             animate={{ y: [0, -6, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           >
-            <div className="relative h-64 w-64 rounded-3xl bg-gradient-to-b from-zinc-900 to-zinc-950 shadow-2xl ring-1 ring-white/10">
+            <div className="relative h-80 w-56 rounded-[32px] bg-gradient-to-b from-zinc-900 to-zinc-950 shadow-2xl ring-1 ring-white/10 md:h-96 md:w-64">
               <div className="absolute inset-6 rounded-[26px] border border-white/10 bg-zinc-950/60" />
-              <div className="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-[44%] bg-[radial-gradient(circle_at_35%_40%,rgba(45,212,191,0.18),transparent_65%)]" />
-              <div className="absolute left-1/2 top-1/2 h-24 w-28 -translate-x-1/2 -translate-y-1/2 rounded-[40%] border border-white/15 bg-zinc-900/80 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)]" />
+              <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-[44%] bg-[radial-gradient(circle_at_35%_40%,rgba(45,212,191,0.18),transparent_65%)]" />
+              <div className="absolute left-1/2 top-1/2 h-28 w-32 -translate-x-1/2 -translate-y-1/2 rounded-[40%] border border-white/15 bg-zinc-900/80 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)]" />
               <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal-400 shadow-[0_0_40px_rgba(45,212,191,0.9)]" />
-              <div className="knode-pulse absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal-400/10 blur-xl" />
-              <div className="knode-orbit absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-teal-400/15">
+              <div className="knode-pulse absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal-400/10 blur-xl" />
+              <div className="knode-orbit absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full border border-teal-400/15">
                 <div className="absolute -top-2 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-teal-400 shadow-[0_0_20px_rgba(45,212,191,0.9)]" />
               </div>
-              <div className="absolute left-7 top-12 h-16 w-px bg-gradient-to-b from-teal-400/40 to-transparent" />
-              <div className="absolute right-10 bottom-8 h-px w-16 bg-gradient-to-r from-teal-400/40 to-transparent" />
-              <div className="absolute left-10 bottom-10 h-px w-14 bg-gradient-to-r from-teal-400/30 to-transparent" />
+              <div className="absolute left-6 top-12 h-20 w-px bg-gradient-to-b from-teal-400/40 to-transparent" />
+              <div className="absolute right-8 bottom-10 h-px w-20 bg-gradient-to-r from-teal-400/40 to-transparent" />
+              <div className="absolute left-10 bottom-12 h-px w-16 bg-gradient-to-r from-teal-400/30 to-transparent" />
             </div>
             <div className="absolute inset-0 -z-10 rounded-3xl bg-[radial-gradient(circle_at_center,rgba(45,212,191,0.15),transparent_60%)]" />
           </motion.div>
